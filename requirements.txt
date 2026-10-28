@@ -1,36 +1,39 @@
+# Exact versions this project was built and tested with (Python 3.13, Windows). The saved models are scikit-learn and
+# PyTorch/ONNX files, so keep these versions to load them reliably.
+
 # CPU-only PyTorch wheels (smaller download, no CUDA needed for this project)
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-numpy>=2.1
-scipy>=1.14
-pandas>=2.2
-scikit-learn>=1.6
-xgboost>=2.1
-shap>=0.46
-joblib>=1.4
-openpyxl>=3.1
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.0
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.54.1
+joblib==1.6.0
+openpyxl==3.1.5
 
 # Audio
-librosa>=0.10
-soundfile>=0.12
-praat-parselmouth>=0.4.5
+librosa==1.0.0
+soundfile==0.14.0
+praat-parselmouth==0.4.7
 
 # Gait video (Model 2)
-mediapipe>=0.10.21
-opencv-python-headless>=4.10
+mediapipe==1.1.1
+opencv-python-headless==5.0.0.93
 
 # Deep learning + export
-torch>=2.5
-onnx>=1.17
-onnxruntime>=1.20
+torch==2.14.1
+onnx==1.23.2
+onnxruntime==1.31.0
 
 # App and API
-streamlit>=1.40
-fastapi>=0.115
-uvicorn>=0.32
-python-multipart>=0.0.12
-httpx>=0.27
-pytest>=8.3
+streamlit==1.66.1
+fastapi==0.162.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+httpx==0.28.1
+pytest==9.1.1
 
 # Plots
-matplotlib>=3.9
+matplotlib==3.11.2
