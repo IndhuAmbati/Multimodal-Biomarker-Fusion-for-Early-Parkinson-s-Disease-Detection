@@ -1,0 +1,22 @@
+{
+  "source": "C:/PD_Gait/reports/results.json (person-wise CV, 54 dev people; test 13 held-out people)",
+  "gait_model": {
+    "cv_auc": 1.0,
+    "test_auc": 1.0
+  },
+  "no_gait_baselines": {
+    "camera_framing_only": {
+      "cv_auc": 1.0,
+      "test_auc": 1.0
+    },
+    "video_metadata_only": {
+      "cv_auc": 1.0,
+      "test_auc": 1.0
+    },
+    "task_features_only": {
+      "cv_auc": 1.0,
+      "test_auc": 1.0
+    }
+  },
+  "finding": "Models given no gait information reach the same AUC as the gait model, so the gait model's accuracy cannot be credited to Parkinson's."
+}
