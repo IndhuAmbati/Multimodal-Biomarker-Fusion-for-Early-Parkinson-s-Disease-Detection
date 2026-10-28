@@ -1,0 +1,36 @@
+# CPU-only PyTorch wheels (smaller download, no CUDA needed for this project)
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy>=2.1
+scipy>=1.14
+pandas>=2.2
+scikit-learn>=1.6
+xgboost>=2.1
+shap>=0.46
+joblib>=1.4
+openpyxl>=3.1
+
+# Audio
+librosa>=0.10
+soundfile>=0.12
+praat-parselmouth>=0.4.5
+
+# Gait video (Model 2)
+mediapipe>=0.10.21
+opencv-python-headless>=4.10
+
+# Deep learning + export
+torch>=2.5
+onnx>=1.17
+onnxruntime>=1.20
+
+# App and API
+streamlit>=1.40
+fastapi>=0.115
+uvicorn>=0.32
+python-multipart>=0.0.12
+httpx>=0.27
+pytest>=8.3
+
+# Plots
+matplotlib>=3.9
