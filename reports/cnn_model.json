@@ -1,0 +1,191 @@
+{
+  "architecture": "4-block CNN (16-32-64-64 channels) on 64-band log-Mel, 1 s windows, mean over windows",
+  "parameters": 60641,
+  "training": {
+    "loss": "BCE with pos_weight",
+    "optimizer": "AdamW lr 1e-3, wd 1e-3",
+    "schedule": "cosine annealing",
+    "max_epochs": 100,
+    "min_epochs": 10,
+    "early_stopping": "validation window loss, patience 15",
+    "augmentation": "pitch shift +/-0.5, +/-1 semitone; additive noise 15-40 dB SNR; SpecAugment",
+    "calibration": "Platt scaling on out-of-fold predictions (cross-fitted for CV metrics)"
+  },
+  "calibration": {
+    "a": 0.15412517905445275,
+    "b": -0.12404235424770273
+  },
+  "cv_folds": {
+    "accuracy": {
+      "mean": 0.6089743589743589,
+      "std": 0.0699863798151599
+    },
+    "precision": {
+      "mean": 0.7,
+      "std": 0.17888543819998318
+    },
+    "sensitivity": {
+      "mean": 0.6333333333333332,
+      "std": 0.32632079426689176
+    },
+    "specificity": {
+      "mean": 0.6142857142857143,
+      "std": 0.3020714576600706
+    },
+    "f1": {
+      "mean": 0.5738095238095238,
+      "std": 0.16536909861128893
+    },
+    "roc_auc": {
+      "mean": 0.6849206349206349,
+      "std": 0.1693956474102922
+    },
+    "brier": {
+      "mean": 0.2507738049927485,
+      "std": 0.036112063735935694
+    }
+  },
+  "cv_pooled_oof": {
+    "n": 64,
+    "accuracy": 0.609375,
+    "precision": 0.6060606060606061,
+    "sensitivity": 0.625,
+    "specificity": 0.59375,
+    "f1": 0.6153846153846154,
+    "roc_auc": 0.5927734375,
+    "brier": 0.2511485638969078,
+    "ece": 0.1402043224936901,
+    "confusion_matrix": [
+      [
+        19,
+        13
+      ],
+      [
+        12,
+        20
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "cv_pooled_oof_uncalibrated_auc": 0.6162109375,
+  "cv_oof_age_50_plus": {
+    "n": 44,
+    "accuracy": 0.5454545454545454,
+    "precision": 0.6923076923076923,
+    "sensitivity": 0.6,
+    "specificity": 0.42857142857142855,
+    "f1": 0.6428571428571429,
+    "roc_auc": 0.4523809523809524,
+    "brier": 0.2667139606352829,
+    "ece": 0.26086049503018255,
+    "confusion_matrix": [
+      [
+        6,
+        8
+      ],
+      [
+        12,
+        18
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "fold_training": [
+    {
+      "best_val_loss": 1.7388533353805542,
+      "best_val_auc": 0.6,
+      "best_epoch": 17,
+      "epochs_run": 32
+    },
+    {
+      "best_val_loss": 0.8565881252288818,
+      "best_val_auc": 0.8333333333333334,
+      "best_epoch": 12,
+      "epochs_run": 27
+    },
+    {
+      "best_val_loss": 1.2265794277191162,
+      "best_val_auc": 0.6333333333333334,
+      "best_epoch": 21,
+      "epochs_run": 36
+    },
+    {
+      "best_val_loss": 0.8626052141189575,
+      "best_val_auc": 0.7,
+      "best_epoch": 13,
+      "epochs_run": 28
+    },
+    {
+      "best_val_loss": 1.0503222942352295,
+      "best_val_auc": 0.5333333333333333,
+      "best_epoch": 11,
+      "epochs_run": 26
+    }
+  ],
+  "cv_seconds": 648.4,
+  "final_training": {
+    "best_val_loss": 0.585808515548706,
+    "best_val_auc": 0.6428571428571429,
+    "best_epoch": 14,
+    "epochs_run": 29
+  },
+  "test": {
+    "n": 17,
+    "accuracy": 0.7647058823529411,
+    "precision": 1.0,
+    "sensitivity": 0.5,
+    "specificity": 1.0,
+    "f1": 0.6666666666666666,
+    "roc_auc": 0.9166666666666667,
+    "brier": 0.21819785777923062,
+    "ece": 0.058597983692467985,
+    "confusion_matrix": [
+      [
+        9,
+        0
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "threshold": 0.5,
+    "ci95": {
+      "accuracy": [
+        0.5294117647058824,
+        0.9411764705882353
+      ],
+      "sensitivity": [
+        0.125,
+        0.8571428571428571
+      ],
+      "specificity": [
+        1.0,
+        1.0
+      ],
+      "f1": [
+        0.2222222222222222,
+        0.9230769230769231
+      ],
+      "roc_auc": [
+        0.7331818181818183,
+        1.0
+      ]
+    }
+  },
+  "confidence_band_accuracy_oof": {
+    "High": {
+      "n": 5,
+      "accuracy": 0.8
+    },
+    "Moderate": {
+      "n": 17,
+      "accuracy": 0.4117647058823529
+    },
+    "Low": {
+      "n": 42,
+      "accuracy": 0.6666666666666666
+    }
+  },
+  "onnx_max_abs_logit_diff": 1.6689300537109375e-06
+}

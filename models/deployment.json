@@ -1,0 +1,224 @@
+{
+  "name": "RF on all 50 features, augmented training (1.5 s windows, median)",
+  "choice": "robust_feature_model",
+  "components": [
+    "feature_model"
+  ],
+  "threshold": 0.62,
+  "threshold_rule": "lowest threshold keeping out-of-fold specificity >= 80%",
+  "selection_rule": "highest mean of clean and perturbed out-of-fold ROC-AUC on the 64 development people",
+  "evaluation": {
+    "cv": {
+      "n": 64,
+      "accuracy": 0.578125,
+      "precision": 0.6470588235294118,
+      "sensitivity": 0.34375,
+      "specificity": 0.8125,
+      "f1": 0.4489795918367347,
+      "roc_auc": 0.654296875,
+      "brier": 0.23321606830110087,
+      "ece": 0.04030927626729329,
+      "confusion_matrix": [
+        [
+          26,
+          6
+        ],
+        [
+          21,
+          11
+        ]
+      ],
+      "threshold": 0.62
+    },
+    "test": {
+      "n": 17,
+      "accuracy": 0.7058823529411765,
+      "precision": 0.7142857142857143,
+      "sensitivity": 0.625,
+      "specificity": 0.7777777777777778,
+      "f1": 0.6666666666666666,
+      "roc_auc": 0.6527777777777778,
+      "brier": 0.246106213468483,
+      "ece": 0.15843256567212013,
+      "confusion_matrix": [
+        [
+          7,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "threshold": 0.62,
+      "ci95": {
+        "accuracy": [
+          0.47058823529411764,
+          0.8823529411764706
+        ],
+        "sensitivity": [
+          0.25,
+          1.0
+        ],
+        "specificity": [
+          0.5,
+          1.0
+        ],
+        "f1": [
+          0.3333333333333333,
+          0.8888888888888888
+        ],
+        "roc_auc": [
+          0.3472222222222222,
+          0.9142857142857143
+        ]
+      }
+    }
+  },
+  "robustness": {
+    "cv": {
+      "clean": {
+        "auc": 0.654296875,
+        "sensitivity": 0.34375,
+        "specificity": 0.8125,
+        "balanced_accuracy": 0.578125,
+        "mean_p_healthy": 0.5091699114835183,
+        "mean_p_pd": 0.5714486410510682
+      },
+      "perturbed": {
+        "auc": 0.6594587053571429,
+        "sensitivity": 0.32142857142857145,
+        "specificity": 0.8392857142857143,
+        "balanced_accuracy": 0.5803571428571429,
+        "mean_p_healthy": 0.5009539787946579,
+        "mean_p_pd": 0.5631342430255931
+      }
+    },
+    "test": {
+      "clean": {
+        "auc": 0.6527777777777778,
+        "sensitivity": 0.625,
+        "specificity": 0.7777777777777778,
+        "balanced_accuracy": 0.7013888888888888,
+        "mean_p_healthy": 0.5521796919684316,
+        "mean_p_pd": 0.5887126409547894
+      },
+      "perturbed": {
+        "auc": 0.6136621315192744,
+        "sensitivity": 0.44642857142857145,
+        "specificity": 0.7619047619047619,
+        "balanced_accuracy": 0.6041666666666666,
+        "mean_p_healthy": 0.5521193906461721,
+        "mean_p_pd": 0.587013733972623
+      }
+    }
+  },
+  "reference_medians": {
+    "healthy": {
+      "f0_mean_hz": 162.257736,
+      "f0_std_st": 0.205772,
+      "f0_min_hz": 154.877609,
+      "f0_max_hz": 167.270735,
+      "f0_range_st": 1.137223,
+      "voiced_fraction": 1.0,
+      "jitter_local": 0.004634,
+      "jitter_abs": 3.4e-05,
+      "jitter_rap": 0.002415,
+      "jitter_ppq5": 0.002614,
+      "jitter_ddp": 0.007246,
+      "shimmer_local": 0.076885,
+      "shimmer_db": 0.67909,
+      "shimmer_apq3": 0.030826,
+      "shimmer_apq5": 0.047951,
+      "shimmer_apq11": 0.084899,
+      "shimmer_dda": 0.092478,
+      "hnr_db": 18.952028,
+      "nhr": 0.023416,
+      "ppe": 0.809317,
+      "rpde": 0.55384,
+      "dfa": 0.103029,
+      "spectral_centroid_hz": 804.302137,
+      "spectral_flatness": 1.7e-05,
+      "mfcc1_mean": -170.976067,
+      "mfcc2_mean": 45.732298,
+      "mfcc3_mean": -33.633085,
+      "mfcc4_mean": -16.073327,
+      "mfcc5_mean": 0.56228,
+      "mfcc6_mean": -8.746514,
+      "mfcc7_mean": -5.929857,
+      "mfcc8_mean": -1.523621,
+      "mfcc9_mean": -8.913235,
+      "mfcc10_mean": -7.59358,
+      "mfcc11_mean": -10.023587,
+      "mfcc12_mean": -4.714368,
+      "mfcc13_mean": -5.16374,
+      "mfcc1_std": 21.084394,
+      "mfcc2_std": 9.79708,
+      "mfcc3_std": 8.140378,
+      "mfcc4_std": 7.240688,
+      "mfcc5_std": 6.732755,
+      "mfcc6_std": 5.989674,
+      "mfcc7_std": 5.661763,
+      "mfcc8_std": 5.169528,
+      "mfcc9_std": 5.025126,
+      "mfcc10_std": 4.903669,
+      "mfcc11_std": 4.440428,
+      "mfcc12_std": 4.054185,
+      "mfcc13_std": 4.170227
+    },
+    "pd": {
+      "f0_mean_hz": 176.637536,
+      "f0_std_st": 0.231481,
+      "f0_min_hz": 167.675985,
+      "f0_max_hz": 196.273743,
+      "f0_range_st": 1.157298,
+      "voiced_fraction": 1.0,
+      "jitter_local": 0.004222,
+      "jitter_abs": 2.3e-05,
+      "jitter_rap": 0.002092,
+      "jitter_ppq5": 0.00247,
+      "jitter_ddp": 0.006276,
+      "shimmer_local": 0.06311,
+      "shimmer_db": 0.603732,
+      "shimmer_apq3": 0.024984,
+      "shimmer_apq5": 0.035395,
+      "shimmer_apq11": 0.068462,
+      "shimmer_dda": 0.074953,
+      "hnr_db": 21.147706,
+      "nhr": 0.019626,
+      "ppe": 0.78911,
+      "rpde": 0.484741,
+      "dfa": 0.071143,
+      "spectral_centroid_hz": 827.825939,
+      "spectral_flatness": 1.2e-05,
+      "mfcc1_mean": -201.541237,
+      "mfcc2_mean": 44.747032,
+      "mfcc3_mean": -32.439154,
+      "mfcc4_mean": -20.251331,
+      "mfcc5_mean": 3.052541,
+      "mfcc6_mean": -8.693071,
+      "mfcc7_mean": -8.448962,
+      "mfcc8_mean": -3.08442,
+      "mfcc9_mean": -8.609198,
+      "mfcc10_mean": -9.811293,
+      "mfcc11_mean": -9.742664,
+      "mfcc12_mean": -6.376849,
+      "mfcc13_mean": -6.013407,
+      "mfcc1_std": 32.771708,
+      "mfcc2_std": 11.41478,
+      "mfcc3_std": 10.439588,
+      "mfcc4_std": 8.540783,
+      "mfcc5_std": 7.478707,
+      "mfcc6_std": 7.153562,
+      "mfcc7_std": 6.237981,
+      "mfcc8_std": 6.19308,
+      "mfcc9_std": 5.744328,
+      "mfcc10_std": 5.671463,
+      "mfcc11_std": 5.858262,
+      "mfcc12_std": 5.377248,
+      "mfcc13_std": 4.827101
+    }
+  },
+  "created": "2026-10-24T12:56:37+00:00",
+  "limitations_markdown": "**Limitations**\n- Trained on 81 people (40 with PD, 41 without) who recorded one sustained 'aaah' over the telephone. Small data\n  means wide uncertainty: see the 95% intervals in the README.\n- The healthy group is younger on average (48 vs 67 years). Part of what any model learns may be age rather than\n  PD; an age-only model is reported as a check.\n- Live laptop or phone microphones differ from the telephone recordings used for training. Audio is band-limited\n  to telephone quality to reduce this gap, but it is not removed.\n- PD medication state, disease stage and other voice disorders were not controlled for.\n- Not validated for clinical use. Screening aid only. Consult a neurologist."
+}

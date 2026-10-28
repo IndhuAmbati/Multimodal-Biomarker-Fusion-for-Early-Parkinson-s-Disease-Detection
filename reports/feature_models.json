@@ -1,0 +1,1091 @@
+{
+  "selected": "Random forest | all features",
+  "results": {
+    "Logistic regression | clinical features": {
+      "model": "Logistic regression",
+      "feature_set": "clinical",
+      "n_features": 24,
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.5799145299145299,
+          "std": 0.13197173495410006
+        },
+        "precision": {
+          "mean": 0.6375541125541127,
+          "std": 0.21915748845872737
+        },
+        "sensitivity": {
+          "mean": 0.5746031746031746,
+          "std": 0.24060057551106562
+        },
+        "specificity": {
+          "mean": 0.5888888888888889,
+          "std": 0.2843175737467606
+        },
+        "f1": {
+          "mean": 0.5587254031371678,
+          "std": 0.16701660931987988
+        },
+        "roc_auc": {
+          "mean": 0.6505291005291005,
+          "std": 0.1649092699860819
+        },
+        "brier": {
+          "mean": 0.23960916659600653,
+          "std": 0.03285977032340372
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.640625,
+        "precision": 0.6551724137931034,
+        "sensitivity": 0.59375,
+        "specificity": 0.6875,
+        "f1": 0.6229508196721312,
+        "roc_auc": 0.6298828125,
+        "brier": 0.237245595656646,
+        "ece": 0.026289041502712156,
+        "confusion_matrix": [
+          [
+            22,
+            10
+          ],
+          [
+            13,
+            19
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "chosen_params": [
+        {
+          "C": 1.0
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 1.0
+        },
+        {
+          "C": 0.1
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 1.0
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 1.0
+        },
+        {
+          "C": 0.1
+        },
+        {
+          "C": 1.0
+        },
+        {
+          "C": 0.01
+        }
+      ],
+      "seconds": 2.3
+    },
+    "SVM (RBF) | clinical features": {
+      "model": "SVM (RBF)",
+      "feature_set": "clinical",
+      "n_features": 24,
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.5170940170940171,
+          "std": 0.1287098327766785
+        },
+        "precision": {
+          "mean": 0.513888888888889,
+          "std": 0.14910647619954676
+        },
+        "sensitivity": {
+          "mean": 0.5174603174603174,
+          "std": 0.21357318338481474
+        },
+        "specificity": {
+          "mean": 0.5206349206349207,
+          "std": 0.1937938581607306
+        },
+        "f1": {
+          "mean": 0.5014631229337111,
+          "std": 0.16308052139764906
+        },
+        "roc_auc": {
+          "mean": 0.5833333333333335,
+          "std": 0.160708570020513
+        },
+        "brier": {
+          "mean": 0.2517769164428581,
+          "std": 0.02818491942633954
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.53125,
+        "precision": 0.53125,
+        "sensitivity": 0.53125,
+        "specificity": 0.53125,
+        "f1": 0.53125,
+        "roc_auc": 0.5634765625,
+        "brier": 0.24863745779246826,
+        "ece": 0.057350502125953315,
+        "confusion_matrix": [
+          [
+            17,
+            15
+          ],
+          [
+            15,
+            17
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "chosen_params": [
+        {
+          "C": 10.0,
+          "gamma": 0.03
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 0.3,
+          "gamma": "scale"
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 1.0,
+          "gamma": "scale"
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 0.3,
+          "gamma": 0.003
+        },
+        {
+          "C": 10.0,
+          "gamma": 0.01
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 0.3,
+          "gamma": 0.003
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 10.0,
+          "gamma": 0.03
+        },
+        {
+          "C": 3.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 10.0,
+          "gamma": "scale"
+        },
+        {
+          "C": 1.0,
+          "gamma": "scale"
+        }
+      ],
+      "seconds": 6.2
+    },
+    "Random forest | clinical features": {
+      "model": "Random forest",
+      "feature_set": "clinical",
+      "n_features": 24,
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.5743589743589743,
+          "std": 0.12469115912232823
+        },
+        "precision": {
+          "mean": 0.6001370851370851,
+          "std": 0.1660831996967424
+        },
+        "sensitivity": {
+          "mean": 0.584126984126984,
+          "std": 0.19708124692277784
+        },
+        "specificity": {
+          "mean": 0.5682539682539683,
+          "std": 0.23934065809486688
+        },
+        "f1": {
+          "mean": 0.5695186295186295,
+          "std": 0.129148451762454
+        },
+        "roc_auc": {
+          "mean": 0.6193121693121693,
+          "std": 0.1442354632975259
+        },
+        "brier": {
+          "mean": 0.24702855573367402,
+          "std": 0.01910771868405541
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.5625,
+        "precision": 0.5625,
+        "sensitivity": 0.5625,
+        "specificity": 0.5625,
+        "f1": 0.5625,
+        "roc_auc": 0.6005859375,
+        "brier": 0.24439229687660058,
+        "ece": 0.05062237952965338,
+        "confusion_matrix": [
+          [
+            18,
+            14
+          ],
+          [
+            14,
+            18
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "chosen_params": [
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 3
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 3
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 3
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        }
+      ],
+      "seconds": 202.2
+    },
+    "XGBoost | clinical features": {
+      "model": "XGBoost",
+      "feature_set": "clinical",
+      "n_features": 24,
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.5696581196581196,
+          "std": 0.13076224773266468
+        },
+        "precision": {
+          "mean": 0.5579100529100529,
+          "std": 0.18517436476324495
+        },
+        "sensitivity": {
+          "mean": 0.5365079365079365,
+          "std": 0.24924173239860978
+        },
+        "specificity": {
+          "mean": 0.6063492063492063,
+          "std": 0.15475986974649023
+        },
+        "f1": {
+          "mean": 0.5298928848928848,
+          "std": 0.1936747290550646
+        },
+        "roc_auc": {
+          "mean": 0.608994708994709,
+          "std": 0.13522271401547703
+        },
+        "brier": {
+          "mean": 0.2445508568368659,
+          "std": 0.017188160371990165
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.59375,
+        "precision": 0.6153846153846154,
+        "sensitivity": 0.5,
+        "specificity": 0.6875,
+        "f1": 0.5517241379310345,
+        "roc_auc": 0.619140625,
+        "brier": 0.2426688765114886,
+        "ece": 0.027796347079426055,
+        "confusion_matrix": [
+          [
+            22,
+            10
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "chosen_params": [
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        }
+      ],
+      "seconds": 206.0
+    },
+    "Logistic regression | all features": {
+      "model": "Logistic regression",
+      "feature_set": "all",
+      "n_features": 50,
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.6786324786324786,
+          "std": 0.11817301848643635
+        },
+        "precision": {
+          "mean": 0.6873809523809523,
+          "std": 0.14533681266508586
+        },
+        "sensitivity": {
+          "mean": 0.6888888888888889,
+          "std": 0.11903703656668364
+        },
+        "specificity": {
+          "mean": 0.6714285714285714,
+          "std": 0.1672777911452409
+        },
+        "f1": {
+          "mean": 0.6821678321678321,
+          "std": 0.11717499029382496
+        },
+        "roc_auc": {
+          "mean": 0.733068783068783,
+          "std": 0.1300269259950456
+        },
+        "brier": {
+          "mean": 0.21489265669670407,
+          "std": 0.0348577934947807
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.703125,
+        "precision": 0.696969696969697,
+        "sensitivity": 0.71875,
+        "specificity": 0.6875,
+        "f1": 0.7076923076923077,
+        "roc_auc": 0.7275390625,
+        "brier": 0.21351886407873183,
+        "ece": 0.044575965937003734,
+        "confusion_matrix": [
+          [
+            22,
+            10
+          ],
+          [
+            9,
+            23
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "chosen_params": [
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.1
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.01
+        }
+      ],
+      "seconds": 9.2
+    },
+    "SVM (RBF) | all features": {
+      "model": "SVM (RBF)",
+      "feature_set": "all",
+      "n_features": 50,
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.6726495726495726,
+          "std": 0.11908746711073531
+        },
+        "precision": {
+          "mean": 0.6917195767195766,
+          "std": 0.1602002601271645
+        },
+        "sensitivity": {
+          "mean": 0.6793650793650794,
+          "std": 0.14954369159763656
+        },
+        "specificity": {
+          "mean": 0.6698412698412698,
+          "std": 0.17644054897257466
+        },
+        "f1": {
+          "mean": 0.6733655233655234,
+          "std": 0.12217889491198877
+        },
+        "roc_auc": {
+          "mean": 0.7386243386243386,
+          "std": 0.13148334449831459
+        },
+        "brier": {
+          "mean": 0.21729187713402068,
+          "std": 0.030743578892268426
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.71875,
+        "precision": 0.7058823529411765,
+        "sensitivity": 0.75,
+        "specificity": 0.6875,
+        "f1": 0.7272727272727273,
+        "roc_auc": 0.7275390625,
+        "brier": 0.21489003630410458,
+        "ece": 0.09823925533716373,
+        "confusion_matrix": [
+          [
+            22,
+            10
+          ],
+          [
+            8,
+            24
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "chosen_params": [
+        {
+          "C": 3.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 0.3,
+          "gamma": 0.03
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 3.0,
+          "gamma": "scale"
+        },
+        {
+          "C": 0.3,
+          "gamma": 0.01
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 3.0,
+          "gamma": "scale"
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 0.3,
+          "gamma": 0.003
+        },
+        {
+          "C": 0.3,
+          "gamma": 0.03
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        },
+        {
+          "C": 0.3,
+          "gamma": 0.003
+        },
+        {
+          "C": 1.0,
+          "gamma": 0.003
+        }
+      ],
+      "seconds": 24.0
+    },
+    "Random forest | all features": {
+      "model": "Random forest",
+      "feature_set": "all",
+      "n_features": 50,
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.7158119658119657,
+          "std": 0.11669875267117953
+        },
+        "precision": {
+          "mean": 0.7307936507936507,
+          "std": 0.13001022306063914
+        },
+        "sensitivity": {
+          "mean": 0.7015873015873015,
+          "std": 0.14929075626701582
+        },
+        "specificity": {
+          "mean": 0.7269841269841268,
+          "std": 0.14852936590843918
+        },
+        "f1": {
+          "mean": 0.7089399489399489,
+          "std": 0.12225847280322047
+        },
+        "roc_auc": {
+          "mean": 0.7661375661375662,
+          "std": 0.11949182265080771
+        },
+        "brier": {
+          "mean": 0.20913708021140176,
+          "std": 0.02761943254449671
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.703125,
+        "precision": 0.696969696969697,
+        "sensitivity": 0.71875,
+        "specificity": 0.6875,
+        "f1": 0.7076923076923077,
+        "roc_auc": 0.74609375,
+        "brier": 0.20633511298429622,
+        "ece": 0.061272584401611846,
+        "confusion_matrix": [
+          [
+            22,
+            10
+          ],
+          [
+            9,
+            23
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "chosen_params": [
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 3
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 3
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 3
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1
+        }
+      ],
+      "seconds": 295.2,
+      "cv_oof_age_50_plus": {
+        "n": 44,
+        "accuracy": 0.6590909090909091,
+        "precision": 0.7777777777777778,
+        "sensitivity": 0.7,
+        "specificity": 0.5714285714285714,
+        "f1": 0.7368421052631579,
+        "roc_auc": 0.7261904761904763,
+        "brier": 0.214806085579386,
+        "ece": 0.1567216451845377,
+        "confusion_matrix": [
+          [
+            8,
+            6
+          ],
+          [
+            9,
+            21
+          ]
+        ],
+        "threshold": 0.5,
+        "subjects": {
+          "pd": 30,
+          "hc": 14
+        }
+      },
+      "confidence_band_accuracy_oof": {
+        "High": {
+          "n": 5,
+          "accuracy": 0.8
+        },
+        "Moderate": {
+          "n": 41,
+          "accuracy": 0.7073170731707317
+        },
+        "Low": {
+          "n": 18,
+          "accuracy": 0.6666666666666666
+        }
+      },
+      "test": {
+        "n": 17,
+        "accuracy": 0.5882352941176471,
+        "precision": 0.5454545454545454,
+        "sensitivity": 0.75,
+        "specificity": 0.4444444444444444,
+        "f1": 0.631578947368421,
+        "roc_auc": 0.6111111111111112,
+        "brier": 0.23597835182241458,
+        "ece": 0.11937472496711471,
+        "confusion_matrix": [
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "threshold": 0.5,
+        "ci95": {
+          "accuracy": [
+            0.35294117647058826,
+            0.8235294117647058
+          ],
+          "sensitivity": [
+            0.4,
+            1.0
+          ],
+          "specificity": [
+            0.125,
+            0.7777777777777778
+          ],
+          "f1": [
+            0.3076923076923077,
+            0.8461538461538461
+          ],
+          "roc_auc": [
+            0.3181439393939393,
+            0.875
+          ]
+        }
+      },
+      "final_params": {
+        "max_depth": null,
+        "min_samples_leaf": 1
+      },
+      "shap_mean_abs_top10": {
+        "mfcc12_std": 0.0271,
+        "mfcc1_std": 0.0264,
+        "mfcc8_std": 0.0235,
+        "mfcc11_std": 0.022,
+        "mfcc4_mean": 0.0177,
+        "mfcc10_std": 0.0154,
+        "voiced_fraction": 0.0117,
+        "shimmer_apq11": 0.0113,
+        "mfcc6_std": 0.0101,
+        "mfcc13_std": 0.0082
+      }
+    },
+    "XGBoost | all features": {
+      "model": "XGBoost",
+      "feature_set": "all",
+      "n_features": 50,
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.6470085470085469,
+          "std": 0.10201419532556089
+        },
+        "precision": {
+          "mean": 0.6705555555555556,
+          "std": 0.12850047032706002
+        },
+        "sensitivity": {
+          "mean": 0.619047619047619,
+          "std": 0.1355261854357877
+        },
+        "specificity": {
+          "mean": 0.6746031746031745,
+          "std": 0.1662504250511259
+        },
+        "f1": {
+          "mean": 0.6342435342435342,
+          "std": 0.10034913083144294
+        },
+        "roc_auc": {
+          "mean": 0.7013227513227512,
+          "std": 0.12481166349803659
+        },
+        "brier": {
+          "mean": 0.2285908966128255,
+          "std": 0.035327204493957355
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.640625,
+        "precision": 0.6451612903225806,
+        "sensitivity": 0.625,
+        "specificity": 0.65625,
+        "f1": 0.6349206349206349,
+        "roc_auc": 0.6708984375,
+        "brier": 0.22602949632968328,
+        "ece": 0.07272778859524182,
+        "confusion_matrix": [
+          [
+            21,
+            11
+          ],
+          [
+            12,
+            20
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "chosen_params": [
+        {
+          "max_depth": 2,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 400
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 2,
+          "n_estimators": 150
+        },
+        {
+          "max_depth": 3,
+          "n_estimators": 400
+        }
+      ],
+      "seconds": 204.3
+    },
+    "Age only (confound check)": {
+      "model": "Logistic regression on age",
+      "feature_set": "age",
+      "cv_folds": {
+        "accuracy": {
+          "mean": 0.802991452991453,
+          "std": 0.09139106458325136
+        },
+        "precision": {
+          "mean": 0.7993915343915343,
+          "std": 0.10490499153632846
+        },
+        "sensitivity": {
+          "mean": 0.8269841269841269,
+          "std": 0.1519504500796739
+        },
+        "specificity": {
+          "mean": 0.780952380952381,
+          "std": 0.12208815570177405
+        },
+        "f1": {
+          "mean": 0.8039077589077588,
+          "std": 0.09725751285287171
+        },
+        "roc_auc": {
+          "mean": 0.8537037037037037,
+          "std": 0.11656914423339988
+        },
+        "brier": {
+          "mean": 0.15894396388328236,
+          "std": 0.044291781257712305
+        }
+      },
+      "cv_pooled_oof": {
+        "n": 64,
+        "accuracy": 0.796875,
+        "precision": 0.7878787878787878,
+        "sensitivity": 0.8125,
+        "specificity": 0.78125,
+        "f1": 0.8,
+        "roc_auc": 0.8408203125,
+        "brier": 0.15923019066143473,
+        "ece": 0.11592880868323105,
+        "confusion_matrix": [
+          [
+            25,
+            7
+          ],
+          [
+            6,
+            26
+          ]
+        ],
+        "threshold": 0.5
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "task": "male/female voice from a sustained /a/",
+  "features": [
+    "log2_f0",
+    "mfcc1_mean",
+    "mfcc2_mean",
+    "mfcc3_mean",
+    "mfcc4_mean",
+    "mfcc5_mean",
+    "mfcc6_mean",
+    "mfcc7_mean",
+    "mfcc8_mean",
+    "mfcc9_mean",
+    "mfcc10_mean",
+    "mfcc11_mean",
+    "mfcc12_mean",
+    "mfcc13_mean"
+  ],
+  "model": "average of two calibrated logistic regressions: pitch only, and pitch + 13 MFCC means",
+  "training": "64 development people, clean + 3 simulated-microphone versions, 1.5 s windows, median per person",
+  "uncertain_band": [
+    0.35,
+    0.65
+  ],
+  "deployed": "ensemble",
+  "cv": {
+    "pitch": {
+      "clean": {
+        "people_x_versions": 192,
+        "accuracy": 0.8489583333333334,
+        "auc": 0.8324028461959495,
+        "female_recall": 0.8857142857142857,
+        "male_recall": 0.8045977011494253,
+        "share_called_uncertain": 0.27604166666666663,
+        "accuracy_when_confident": 0.8705035971223022
+      },
+      "simulated microphone": {
+        "people_x_versions": 576,
+        "accuracy": 0.8090277777777778,
+        "auc": 0.7932494070425105,
+        "female_recall": 0.8222222222222222,
+        "male_recall": 0.7931034482758621,
+        "share_called_uncertain": 0.265625,
+        "accuracy_when_confident": 0.8226950354609929
+      }
+    },
+    "spectral": {
+      "clean": {
+        "people_x_versions": 192,
+        "accuracy": 0.859375,
+        "auc": 0.9208538587848933,
+        "female_recall": 0.8285714285714286,
+        "male_recall": 0.896551724137931,
+        "share_called_uncertain": 0.16145833333333337,
+        "accuracy_when_confident": 0.9192546583850931
+      },
+      "simulated microphone": {
+        "people_x_versions": 576,
+        "accuracy": 0.8784722222222222,
+        "auc": 0.9223377729124856,
+        "female_recall": 0.8857142857142857,
+        "male_recall": 0.8697318007662835,
+        "share_called_uncertain": 0.13368055555555558,
+        "accuracy_when_confident": 0.9138276553106213
+      }
+    },
+    "ensemble": {
+      "clean": {
+        "people_x_versions": 192,
+        "accuracy": 0.890625,
+        "auc": 0.9154898741105638,
+        "female_recall": 0.8761904761904762,
+        "male_recall": 0.9080459770114943,
+        "share_called_uncertain": 0.234375,
+        "accuracy_when_confident": 0.9319727891156463
+      },
+      "simulated microphone": {
+        "people_x_versions": 576,
+        "accuracy": 0.8576388888888888,
+        "auc": 0.9095298911390863,
+        "female_recall": 0.8539682539682539,
+        "male_recall": 0.8620689655172413,
+        "share_called_uncertain": 0.265625,
+        "accuracy_when_confident": 0.9385342789598109
+      }
+    }
+  },
+  "test": {
+    "pitch": {
+      "clean": {
+        "people_x_versions": 17,
+        "accuracy": 0.8823529411764706,
+        "auc": 0.9861111111111112,
+        "female_recall": 1.0,
+        "male_recall": 0.75,
+        "share_called_uncertain": 0.2941176470588235,
+        "accuracy_when_confident": 1.0
+      },
+      "simulated microphone": {
+        "people_x_versions": 51,
+        "accuracy": 0.8627450980392157,
+        "auc": 0.9552469135802469,
+        "female_recall": 0.9629629629629629,
+        "male_recall": 0.75,
+        "share_called_uncertain": 0.37254901960784315,
+        "accuracy_when_confident": 0.96875
+      }
+    },
+    "spectral": {
+      "clean": {
+        "people_x_versions": 17,
+        "accuracy": 0.8823529411764706,
+        "auc": 0.9861111111111112,
+        "female_recall": 1.0,
+        "male_recall": 0.75,
+        "share_called_uncertain": 0.11764705882352944,
+        "accuracy_when_confident": 0.9333333333333333
+      },
+      "simulated microphone": {
+        "people_x_versions": 51,
+        "accuracy": 0.9215686274509803,
+        "auc": 0.9938271604938271,
+        "female_recall": 1.0,
+        "male_recall": 0.8333333333333334,
+        "share_called_uncertain": 0.11764705882352944,
+        "accuracy_when_confident": 0.9777777777777777
+      }
+    },
+    "ensemble": {
+      "clean": {
+        "people_x_versions": 17,
+        "accuracy": 0.9411764705882353,
+        "auc": 1.0,
+        "female_recall": 1.0,
+        "male_recall": 0.875,
+        "share_called_uncertain": 0.23529411764705888,
+        "accuracy_when_confident": 1.0,
+        "accuracy_ci95": [
+          0.8235294117647058,
+          1.0
+        ]
+      },
+      "simulated microphone": {
+        "people_x_versions": 51,
+        "accuracy": 0.9803921568627451,
+        "auc": 1.0,
+        "female_recall": 1.0,
+        "male_recall": 0.9583333333333334,
+        "share_called_uncertain": 0.17647058823529416,
+        "accuracy_when_confident": 1.0
+      }
+    }
+  },
+  "people": {
+    "development_female": 35,
+    "development_male": 29
+  }
+}

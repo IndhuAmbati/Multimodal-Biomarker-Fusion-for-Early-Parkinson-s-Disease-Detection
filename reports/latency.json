@@ -1,0 +1,28 @@
+{
+  "model_load_seconds": 1.77,
+  "warm_up_seconds": 0.67,
+  "5s_audio": {
+    "runs": 85,
+    "end_to_end_ms_median": 907.8,
+    "end_to_end_ms_p95": 1058.4,
+    "end_to_end_ms_max": 1277.8,
+    "stage_ms_median": {
+      "preprocess": 27.2,
+      "features": 826.2,
+      "models": 54.7,
+      "total": 906.5
+    }
+  },
+  "10s_audio": {
+    "runs": 85,
+    "end_to_end_ms_median": 879.1,
+    "end_to_end_ms_p95": 996.4,
+    "end_to_end_ms_max": 1185.3,
+    "stage_ms_median": {
+      "preprocess": 51.5,
+      "features": 767.8,
+      "models": 41.6,
+      "total": 876.7
+    }
+  }
+}

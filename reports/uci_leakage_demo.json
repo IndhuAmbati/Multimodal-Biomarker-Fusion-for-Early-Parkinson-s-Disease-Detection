@@ -1,0 +1,54 @@
+{
+  "dataset": "UCI Parkinson's (Little et al. 2007): 195 recordings, 32 subjects (24 PD, 8 healthy)",
+  "protocol": "stratified 5-fold, repeated 5 times; same models, only the split changes",
+  "results": {
+    "Logistic regression": {
+      "split_by_recording": {
+        "recording_auc": 0.8946712018140591,
+        "recording_accuracy": 0.7815384615384615,
+        "subject_auc": 0.9468750000000001
+      },
+      "split_by_subject": {
+        "recording_auc": 0.7816893424036282,
+        "recording_accuracy": 0.7015384615384616,
+        "subject_auc": 0.7906249999999999
+      }
+    },
+    "SVM (RBF)": {
+      "split_by_recording": {
+        "recording_auc": 0.9325963718820862,
+        "recording_accuracy": 0.875897435897436,
+        "subject_auc": 0.9833333333333334
+      },
+      "split_by_subject": {
+        "recording_auc": 0.6682539682539683,
+        "recording_accuracy": 0.7425641025641025,
+        "subject_auc": 0.6458333333333333
+      }
+    },
+    "Random forest": {
+      "split_by_recording": {
+        "recording_auc": 0.9532454648526076,
+        "recording_accuracy": 0.9046153846153846,
+        "subject_auc": 0.9989583333333332
+      },
+      "split_by_subject": {
+        "recording_auc": 0.7367063492063493,
+        "recording_accuracy": 0.7671794871794873,
+        "subject_auc": 0.7052083333333332
+      }
+    },
+    "XGBoost": {
+      "split_by_recording": {
+        "recording_auc": 0.9479875283446713,
+        "recording_accuracy": 0.8994871794871795,
+        "subject_auc": 1.0
+      },
+      "split_by_subject": {
+        "recording_auc": 0.7518990929705216,
+        "recording_accuracy": 0.7548717948717949,
+        "subject_auc": 0.7645833333333334
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "dataset": "Iyer et al. 2023, Voice Samples for Patients with Parkinson's Disease and Healthy Controls (figshare, doi:10.6084/m9.figshare.23849127, CC BY 4.0)",
+  "task": "sustained vowel /a/, recorded over the telephone at 8 kHz",
+  "all": {
+    "subjects": 81,
+    "recordings": 81,
+    "pd_subjects": 40,
+    "hc_subjects": 41,
+    "pd_age_mean": 67.0,
+    "pd_age_range": [
+      43.12,
+      85.31
+    ],
+    "pd_female": 19,
+    "pd_male": 21,
+    "pd_under_50": 3,
+    "hc_age_mean": 47.7,
+    "hc_age_range": [
+      18.0,
+      79.0
+    ],
+    "hc_female": 25,
+    "hc_male": 16,
+    "hc_under_50": 23,
+    "duration_seconds": {
+      "0": [
+        1.63,
+        2.87,
+        5.76
+      ],
+      "1": [
+        1.52,
+        3.32,
+        7.21
+      ]
+    }
+  },
+  "development": {
+    "subjects": 64,
+    "recordings": 64,
+    "pd_subjects": 32,
+    "hc_subjects": 32,
+    "pd_age_mean": 67.4,
+    "pd_age_range": [
+      48.26,
+      85.31
+    ],
+    "pd_female": 16,
+    "pd_male": 16,
+    "pd_under_50": 2,
+    "hc_age_mean": 48.0,
+    "hc_age_range": [
+      18.0,
+      79.0
+    ],
+    "hc_female": 19,
+    "hc_male": 13,
+    "hc_under_50": 18,
+    "duration_seconds": {
+      "0": [
+        1.63,
+        3.02,
+        5.44
+      ],
+      "1": [
+        1.59,
+        3.32,
+        7.21
+      ]
+    }
+  },
+  "test": {
+    "subjects": 17,
+    "recordings": 17,
+    "pd_subjects": 8,
+    "hc_subjects": 9,
+    "pd_age_mean": 65.6,
+    "pd_age_range": [
+      43.12,
+      80.67
+    ],
+    "pd_female": 3,
+    "pd_male": 5,
+    "pd_under_50": 1,
+    "hc_age_mean": 46.9,
+    "hc_age_range": [
+      36.0,
+      57.0
+    ],
+    "hc_female": 6,
+    "hc_male": 3,
+    "hc_under_50": 5,
+    "duration_seconds": {
+      "0": [
+        1.79,
+        2.72,
+        5.76
+      ],
+      "1": [
+        1.52,
+        3.07,
+        6.65
+      ]
+    }
+  },
+  "missing_feature_values": {},
+  "uci": {
+    "dataset": "Little et al. 2007, UCI Parkinson's (id 174)",
+    "recordings": 195,
+    "subjects": 32,
+    "pd_subjects": 24,
+    "hc_subjects": 8,
+    "recordings_per_subject": [
+      6,
+      7
+    ]
+  },
+  "extraction_seconds": 11.8
+}

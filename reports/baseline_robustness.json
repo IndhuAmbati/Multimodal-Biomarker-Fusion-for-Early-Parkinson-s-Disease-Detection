@@ -1,0 +1,23 @@
+{
+  "clean": {
+    "mean_p_pd_healthy": 0.5029739387977349,
+    "mean_p_pd_pd": 0.5785714494686971,
+    "specificity": 0.4444444444444444,
+    "sensitivity": 0.75,
+    "healthy_flagged_pd": 0.5555555555555556
+  },
+  "mic": {
+    "mean_p_pd_healthy": 0.5133614148114943,
+    "mean_p_pd_pd": 0.5507410853488102,
+    "specificity": 0.4074074074074074,
+    "sensitivity": 0.625,
+    "healthy_flagged_pd": 0.5925925925925926
+  },
+  "pitch": {
+    "mean_p_pd_healthy": 0.4528605761959684,
+    "mean_p_pd_pd": 0.5298948719842654,
+    "specificity": 0.6388888888888888,
+    "sensitivity": 0.6875,
+    "healthy_flagged_pd": 0.3611111111111111
+  }
+}
